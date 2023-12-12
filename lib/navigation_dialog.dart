@@ -40,19 +40,19 @@ class _NavigationDialogScreenState extends State<NavigationDialogScreen> {
             TextButton(
               child: const Text('Red'),
               onPressed: () {
-                Navigator.pop(context, Colors.red.shade700);
+                Navigator.pop(context, Colors.orange.shade700);
               },
             ),
             TextButton(
               child: const Text('Green'),
               onPressed: () {
-                Navigator.pop(context, Colors.green.shade700);
+                Navigator.pop(context, Colors.pink.shade700);
               },
             ),
             TextButton(
               child: const Text('Blue'),
               onPressed: () {
-                Navigator.pop(context, Colors.blue.shade700);
+                Navigator.pop(context, Colors.grey.shade700);
               },
             ),
           ],
