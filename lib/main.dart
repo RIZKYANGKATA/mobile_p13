@@ -3,6 +3,8 @@ import 'package:async/async.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
+import 'package:mobile_p13/navigation_dialog.dart';
+import 'package:mobile_p13/navigation_first.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,19 +22,22 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const FuturePage(),
+      // home: const FuturePage(),
+      // home: LocationScreen(),
+      // home: const NavigationFirst(),
+      home: const NavigationDialogScreen()
     );
   }
 }
 
-class FuturePage extends StatefulWidget {
-  const FuturePage({super.key});
+class LocationScreen extends StatefulWidget {
+  const LocationScreen({super.key});
 
   @override
-  State<FuturePage> createState() => _FuturePageState();
+  State<LocationScreen> createState() => _LocationScreenState();
 }
 
-class _FuturePageState extends State<FuturePage> {
+class _LocationScreenState extends State<LocationScreen> {
 
   Future handleError() async{
     try {
